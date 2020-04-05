@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/colt_onclite.mk
+    $(LOCAL_DIR)/potato_onclite.mk
 
  COMMON_LUNCH_CHOICES := \
-    colt_onclite-user \
-    colt_onclite-userdebug \
-    colt_onclite-eng
+    potato_onclite-user \
+    potato_onclite-userdebug \
+    potato_onclite-eng
