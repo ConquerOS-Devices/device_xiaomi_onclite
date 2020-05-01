@@ -17,8 +17,8 @@ $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 
 # Bootanimation res
-TARGET_BOOT_ANIMATION_RES := 720x1280
-IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 720
+TARGET_BOOTANIM_LOW_RES := true
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := potato_onclite
