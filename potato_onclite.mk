@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from onclite device
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
-# Inherit some coltOS stuff.
+# Inherit some POSP goodness
 $(call inherit-product, vendor/potato/config/common_full_phone.mk)
 
 
