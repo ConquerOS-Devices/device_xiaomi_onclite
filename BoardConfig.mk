@@ -182,9 +182,7 @@ TARGET_PER_MGR_ENABLED := true
 # Power
 TARGET_TAP_TO_WAKE_NODE := "/dev/input/event2"
 TARGET_USES_INTERACTION_BOOST := true
-
-# Qualcomm
-BOARD_USES_QCOM_HARDWARE := true
+TARGET_USES_NON_LEGACY_POWERHAL := true
 
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
@@ -228,3 +226,7 @@ SELINUX_IGNORE_NEVERALLOWS := true
 
 # Inherit from the proprietary version
 -include vendor/xiaomi/onclite/BoardConfigVendor.mk
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS := perf
+
