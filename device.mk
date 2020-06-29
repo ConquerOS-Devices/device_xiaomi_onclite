@@ -134,14 +134,13 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     android.hardware.bluetooth.audio@2.0-impl \
     libbthost_if \
-    libbluetooth_qti
+    libbluetooth
 
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
-    libgui_vendor \
-    GCam
+    libgui_vendor 
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -416,7 +415,14 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_BOARD_PLATFORM := msm8953
 PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
+
+# Define soong namespaces incl. HALs
+
+PRODUCT_SOONG_NAMESPACES += \
+	$(LOCAL_PATH) \
+	hardware/qcom/display \
+	hardware/qcom/media \
+	hardware/qcom/audio
 
 # vendor qcom/common
 -include vendor/qcom/common/av/qti-av.mk
