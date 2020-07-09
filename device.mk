@@ -428,6 +428,11 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     NotchOverlay
 
+# HIDL
+PRODUCT_PACKAGES += \
+    android.hidl.base@1.0 \
+    android.hidl.manager@1.0
+
 PRODUCT_BOARD_PLATFORM := msm8953
 PRODUCT_USES_QCOM_HARDWARE := true
 
