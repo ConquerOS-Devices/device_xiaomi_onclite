@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, vendor/xiaomi/onclite/onclite-vendor.mk)
-
+$(call inherit-product, vendor/qcom/common/perf/perf-vendor.mk)
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
@@ -448,3 +448,6 @@ PRODUCT_SOONG_NAMESPACES += \
 -include vendor/qcom/common/av/qti-av.mk
 -include vendor/qcom/common/perf/qti-perf.mk
 
+PRODUCT_BOOT_JARS += \
+    QPerformance \
+    UxPerformance
