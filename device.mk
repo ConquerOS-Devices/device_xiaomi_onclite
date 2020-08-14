@@ -85,9 +85,6 @@ PRODUCT_PACKAGES += \
     libantradio
 
 # Audio
-AUDIO_SDK_FLUENCETYPE := fluence
-$(call inherit-product, hardware/qcom/audio/configs/msm8953/msm8953.mk)
-
 PRODUCT_PACKAGES += \
     android.hardware.audio@5.0-impl \
     android.hardware.audio@2.0-service \
