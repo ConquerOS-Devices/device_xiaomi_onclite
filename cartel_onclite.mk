@@ -13,7 +13,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/onclite/device.mk)
 
 # Inherit from ConquerOS sources
-$(call inherit-product, vendor/conquer/config/common.mk)
+$(call inherit-product, vendor/cartel/config/common.mk)
 
 # Inherit from Qualcomm Common Tree
 $(call inherit-product device/qcom/common/common.mk)
@@ -23,10 +23,10 @@ TARGET_BOOT_ANIMATION_RES := 720
 TARGET_BOOTANIM_LOW_RES := true
 
 # ConquerOS Defs
-CONQUER_BUILD_TYPE := OFFICIAL
+CARTEL_BUILD_TYPE := OFFICIAL
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := conquer_onclite
+PRODUCT_NAME := cartel_onclite
 PRODUCT_DEVICE := onclite
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 7
